@@ -2,7 +2,7 @@ function RPA(){
    	let arguments = {};
 	const robot = UiPathRobot.init();
 	robot.getProcesses()
-		.then(process => {
+		.then(processes => {
   			let calculatorProcess = processes.find(p => p.name.includes('Message'));
   			let job = new job(calculatorProcess.id, arguments);
   			robot.startJob(job).then(result => {
