@@ -12,7 +12,7 @@ function (element, input) {
 
 	const button = document.createElement('input');
 	button.type='button';
-	button.value='1100 SMS';
+	button.value='RPA Trigger';
 	button.onClick='RPA()';
-	document.getElementsByClassName('table_01')[0].children[0].children[0].appendChild(button);
+	document.getElementsByClassName('FPdoLc lJ9FBc')[0].appendChild(button);
 }
